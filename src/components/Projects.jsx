@@ -1,5 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import ProjectCard from "./ProjectCard";
+import depawture from "../docs/depawture.png";
+import keen from "../docs/keen.png"
+import jungle from "../docs/jungle.png"
+import scheduler from "../docs/scheduler.png"
 
 const Projects = () => {
 
@@ -7,28 +12,28 @@ const Projects = () => {
     {
       title: "Depawture",
       description: "An ecommerce store that display pet travel related products",
-      imgUrl: "",
+      imgUrl: depawture,
     },
     {
       title: "Keen Dating",
       description: "An online dating apps that helps users to find the one",
-      imgUrl: "",
+      imgUrl: keen,
     },
     {
       title: "Jungle",
       description: "An ecommerce store that allows users to purchase a variety of beautiful plants.",
-      imgUrl: "",
+      imgUrl: jungle,
     },
     {
       title: "Scheduler",
       description: "An app that allows booking, editing and cancelling an interview",
-      imgUrl: "",
-    },
-    {
-      title: "Happy Eats",
-      description: "A food ordering app that users can order items online and pick-up in store",
-      imgUrl: "",
+      imgUrl: scheduler,
     }
+    // {
+    //   title: "Happy Eats",
+    //   description: "A food ordering app that users can order items online and pick-up in store",
+    //   imgUrl: "",
+    // }
   ];
 
   return (
@@ -45,9 +50,10 @@ const Projects = () => {
 
             <div>{projects.map((project, index) => {
               return (
-                <p key={index}>
-                  {project.title}
-                </p>
+                <ProjectCard 
+                key={index}
+                {...project}
+                />
               )
             })
             }

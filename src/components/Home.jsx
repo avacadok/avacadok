@@ -5,11 +5,11 @@ const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [typingTime, setTypingTiming] = useState(300 - Math.random() * 100);
+  const [typingTime, setTypingTiming] = useState(200);
   const [index, setIndex] = useState(1);
   const rotateText = ["Full-stack Developer", "Web Designer", "Problem Solver"];
   //rotate time between each text
-  const period = 2000;
+  const period = 1000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -41,7 +41,7 @@ const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setTypingTiming(500);
+      setTypingTiming(150);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
