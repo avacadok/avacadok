@@ -1,0 +1,72 @@
+import React, { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+
+const Banner = () => {
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState('');
+  const [typingTime, setTypingTiming] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const rotateText = ["Full-stack Developer", "Web Designer", "Front-end Developer"];
+  //rotate time between each text
+  const period = 2000;
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, typingTime);
+
+    return () => { clearInterval(ticker) };
+  }, [text])
+
+  const tick = () => {
+    //index of the rotateText
+    let i = loopNum % rotateText.length;
+    let fullText = rotateText[i];
+    //deleting text when isDeleting is true. if not, add one letter for the text
+    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setTypingTiming(prevDelta => prevDelta / 1.5);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      //delete text when its a full string
+      setIsDeleting(true);
+      setIndex(prevIndex => prevIndex - 1);
+      setTypingTiming(period);
+    } else if (isDeleting && updatedText === '') {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setTypingTiming(500);
+    } else {
+      setIndex(prevIndex => prevIndex + 1);
+    }
+  }
+  return (
+    <section className="banner" id="home">
+      <Container>
+        <Row className="align-item-center">
+            <Col xs={12} md={6} xl={7}>
+              <span className="tagline">
+                Welcome to my Portfolio
+              </span>
+              <h1>Hi I am Ava <br/> I am a <span className="wrap">{text}</span></h1>
+              {/* <p>I am a web developer who transitioned from the financial banking field. I had a strong interest in web development and love the ability to be creative and design visually appealing applications. Passionated about using my code to create beautiful and user-friendly products, that provide joy in people’s daily lives. I am driven learn new concepts and work well in highly collaborative work environment.</p> */}
+              {/* <button onClick={() => console.log('connected')}>Let's connect 💜</button> */}
+            </Col>
+
+          <Col xs={12} md={6} xl={5}>
+            <img src="https://imgur.com/wiE1POO.gif" alt="creativity" />
+          </Col>
+
+        </Row>
+      </Container>
+    </section>
+  )
+}
+
+export default Banner;

@@ -26,7 +26,7 @@ const NavBar = () => {
     <Navbar bg="light" expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home" className="logo">
-          <h1>Ava K</h1>
+          <h1>AVA </h1>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" >
