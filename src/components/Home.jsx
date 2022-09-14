@@ -7,7 +7,7 @@ const Banner = () => {
   const [text, setText] = useState('');
   const [typingTime, setTypingTiming] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const rotateText = ["Full-stack Developer", "Web Designer", "Front-end Developer"];
+  const rotateText = ["Full-stack Developer", "Web Designer", "Problem Solver"];
   //rotate time between each text
   const period = 2000;
 
@@ -47,16 +47,16 @@ const Banner = () => {
     }
   }
   return (
-    <section className="banner" id="home">
+    <section className="home">
       <Container>
         <Row className="align-item-center">
             <Col xs={12} md={6} xl={7}>
               <span className="tagline">
-                Welcome to my Portfolio
+                Welcome to my Portfolio 
               </span>
-              <h1>Hi I am Ava <br/> I am a <span className="wrap">{text}</span></h1>
-              {/* <p>I am a web developer who transitioned from the financial banking field. I had a strong interest in web development and love the ability to be creative and design visually appealing applications. Passionated about using my code to create beautiful and user-friendly products, that provide joy in people’s daily lives. I am driven learn new concepts and work well in highly collaborative work environment.</p> */}
-              {/* <button onClick={() => console.log('connected')}>Let's connect 💜</button> */}
+              <h1>Hi I am Ava ✨<br/> A <span className="wrap">{text}</span></h1>
+              <p>I am a web developer who transitioned from the financial banking field. I had a strong interest in web development and love the ability to be creative and design visually appealing applications. Passionated about using my code to create beautiful and user-friendly products, that provide joy in people’s daily lives. I am driven to learn new concepts and work well in highly collaborative work environment.</p>
+              {/* <button onClick={() => console.log('connected')}>Let's connect </button> */}
             </Col>
 
           <Col xs={12} md={6} xl={5}>

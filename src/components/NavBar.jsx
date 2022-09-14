@@ -2,28 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const NavBar = () => {
-  const [activeLink, setActiveLink] = useState("home");
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false)
-      }
-    }
-    window.addEventListener("scroll", onScroll)
-
-    return () => window.removeEventListener("scroll", onScroll)
-  }, []);
+  const [activeLink, setActiveLink] = useState('home');
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
 
   return (
-    <Navbar bg="light" expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Navbar bg="light" expand="lg" className="nav-bar">
       <Container>
         <Navbar.Brand href="#home" className="logo">
           <h1>AVA </h1>
