@@ -1,27 +1,22 @@
 import React from "react";
 
-
 const ProjectCard = (props) => {
-  const { title, description, imgUrl } = props;
+  const { title, description, imgUrl, link } = props;
 
   return (
     <>
-      <li className="cards__item">
-        <div className='cards__item__link'>
+      <div className='project-item'>
 
-        <figure className='cards__item__pic-wrap' data-category={title}>
-          <img src={imgUrl} alt="project-pic" className="cards__item__img"/>
-        </figure>
+        <a href={link} className='project-pic-wrap' data-category={title}>
+          <img src={imgUrl} alt="project-pic" className="project-pic" />
+        </a>
 
-        <div className="cards__item__info">
-          <h3 className="cards__item__text">
+        <div className="project-info">
+          <h3 className="project-text">
             {description}
           </h3>
-
         </div>
-        </div>
-      </li>
-
+      </div>
     </>
   )
 }
