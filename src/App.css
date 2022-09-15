@@ -112,7 +112,7 @@ nav.navbar {
 /* home */
 .home {
   margin-top: 0;
-  padding-top: 150px;
+  padding-top: 200px;
   height:100%;
   width:100%;
   min-height: 100vh;
@@ -223,18 +223,22 @@ nav.navbar {
 }
 
 /* Projects */
-.cards {
+.projects {
   padding: 4rem;
   background: #fff;
+  height:100%;
+  width:100%;
+  min-height: 100vh;
+  position: relative;
 }
 
-.cards h2 {
+.projects h2 {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
 }
 
-.cards p {
+.projects p {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -243,32 +247,26 @@ nav.navbar {
   width: 56%;
 }
 
-.cards__container {
-  display: flex;
-  flex-grow: 4;
-}
-
- .cards__wrapper {
-  position: relative;
-  margin: 50px 0 45px;
-}
-
-.cards__items {
-  margin-bottom: 24px;
-}
-
-.cards__item {
-  display: flex;
-  flex: 1;
-  margin: 0 1rem;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-}
-
-.cards__item__link {
+.projects-container {
   display: flex;
   flex-flow: column;
   width: 100%;
+  margin: 0 auto;
+}
+
+ .projects-wrapper {
+  position: relative;
+  margin: 50px 0 50px;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding-left: 40px;
+}
+
+.project-item {
+  display: flex;
+  flex-flow: column;
+  width: 90%;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
@@ -277,19 +275,16 @@ nav.navbar {
   text-decoration: none;
 }
 
-.cards__item__pic-wrap {
+.project-pic-wrap {
   position: relative;
   width: 100%;
   padding-top: 67%;
   overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.fade-img {
-  animation-name: fade-img;
-  animation-duration: 2s;
-}
-
-.cards__item__pic-wrap::after {
+.project-pic-wrap::after {
   content: attr(data-category);
   position: absolute;
   bottom: 0;
@@ -301,7 +296,7 @@ nav.navbar {
   box-sizing: rgb(1, 11, 19)
 }
 
-.cards__item__img {
+.project-pic {
   position: absolute;
   top: 0;
   right: 0;
@@ -316,17 +311,18 @@ nav.navbar {
   transition: all 0.2s linear;
 }
 
-.cards__item__img:hover {
+.project-pic:hover {
   transform: scale(1.1);
 }
 
-.cards__item__info {
+.project-info {
   padding: 20px 30px 30px;
-
+  text-decoration: none;
+  color: #000000;
 }
 
-.cards__item__text {
-  font-size: 18px;
+.project-text {
+  font-size: 22px;
   line-height: 24px;
 }
 
