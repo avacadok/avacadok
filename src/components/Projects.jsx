@@ -37,18 +37,13 @@ const Projects = () => {
   ];
 
   return (
-    <section className="project">
-      <Container>
-        <Row>
-          <Col>
-            <h2>
-              My Projects
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem perferendis rerum vero maxime vel repellat iste error? Expedita, molestiae alias?
-            </p>
-
-            <div>{projects.map((project, index) => {
+    <section className="cards">
+      <h2>My Projects</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tenetur quis illum fugiat excepturi non ullam enim eaque libero nobis, quos optio distinctio autem laboriosam?</p>
+      <div className="cards__container">
+        <div className="cards__wrapper">
+        <ul className="project-display">
+          {projects.map((project, index) => {
               return (
                 <ProjectCard 
                 key={index}
@@ -57,14 +52,22 @@ const Projects = () => {
               )
             })
             }
-            </div>
-          </Col>
-        </Row>
-
-      </Container>
-
+            </ul>
+        </div>
+      </div>
     </section>
   )
 }
 
 export default Projects;
+
+{/* <div className="project-display">{projects.map((project, index) => {
+              return (
+                <ProjectCard 
+                key={index}
+                {...project}
+                />
+              )
+            })
+            }
+            </div> */}
