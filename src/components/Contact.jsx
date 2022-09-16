@@ -43,7 +43,7 @@ const Contact = () => {
   };
       console.log("status",status.message)
   return (
-    <section className="contact-ava">
+    <section className="contact-ava" id="contact">
       <Container >
         <Row className="align-items-center">
           <Col size={12} md={6}>

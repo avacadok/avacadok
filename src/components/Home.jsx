@@ -49,10 +49,10 @@ const Banner = () => {
     }
   }
   return (
-    <TrackVisibility>
-      {({ isVisible }) =>
-        <div className={isVisible ? "animate__animated animate__fadeIn animate__slow" : ""}>
-          <section className="home">
+    <section className="home" id="home">
+      <TrackVisibility>
+        {({ isVisible }) =>
+          <div className={isVisible ? "animate__animated animate__fadeInDown animate__slow" : ""}>
             <Container>
               <Row className="align-item-center">
                 <Col xs={12} md={6} xl={7}>
@@ -69,9 +69,9 @@ const Banner = () => {
 
               </Row>
             </Container>
-          </section>
-        </div>}
-    </TrackVisibility>
+          </div>}
+      </TrackVisibility>
+    </section>
   )
 }
 
