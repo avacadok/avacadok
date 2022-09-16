@@ -7,8 +7,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -17,8 +17,8 @@ body {
   position: relative;
   background-color: #E3E5FA !important;
   font-family: 'Centra', sans-serif !important;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
 }
 
 h1,
@@ -113,8 +113,8 @@ nav.navbar {
 .home {
   margin-top: 0;
   padding-top: 200px;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -163,6 +163,36 @@ nav.navbar {
   background-color: transparent;
 }
 
+@media screen and (min-width: 390px) {
+  .creative-img {
+    width: 400px;
+    height: 350px;
+    margin-left: 10px;
+
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .creative-img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .creative-img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .creative-img {
+    width: 650px;
+    height: 650px;
+  }
+}
+
 /* .home img {
   animation: updown 3s linear infinite;
 }
@@ -185,8 +215,8 @@ nav.navbar {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   min-height: 100vh;
 
 }
@@ -226,15 +256,15 @@ nav.navbar {
 .projects {
   padding: 4rem;
   background: #fff;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   min-height: 100vh;
   position: relative;
 }
 
 .projects h2 {
-	font-size: 45px;
-	font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -244,7 +274,7 @@ nav.navbar {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
+  width: 80%;
 }
 
 .projects-container {
@@ -254,19 +284,19 @@ nav.navbar {
   margin: 0 auto;
 }
 
- .projects-wrapper {
+.projects-wrapper {
   position: relative;
   margin: 50px 0 50px;
   display: grid;
-  gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding-left: 40px;
 }
 
 .project-item {
   display: flex;
   flex-flow: column;
-  width: 90%;
+  width: 100%;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
@@ -322,7 +352,98 @@ nav.navbar {
 }
 
 .project-text {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 24px;
 }
 
+/* Contact */
+
+.contact-ava {
+  padding: 60px 0 200px 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-ava img {
+  width: 92%;
+}
+
+.contact-ava h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contact-ava form input,
+.contact-ava form textarea {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(146, 104, 173, 0.977);
+  border-radius: 20px;
+  margin: 0 0 10px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-ava form textarea {
+  resize: none;
+}
+
+
+
+.contact-ava form input:focus,
+.contact-ava form textarea:focus {
+  outline-width: 0;
+}
+
+.contact-ava form button {
+  font-weight: 700;
+  font-size: 20px;
+  background-color: rgba(132, 69, 171, 0.977);
+  padding: 14px 48px;
+  border-radius: 10px;
+  margin-top: 20px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  color: #fff;
+}
+
+.contact-detail .textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* .contact-ava form button span {
+  z-index: 1;
+  position: relative;
+}
+
+.contact-ava form button::before {
+  content: "";
+  background: #7b2fa4;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.4s ease-in-out;
+  border-radius: 10px;
+  color: #fff;
+}
+.contact-ava form button:hover::before {
+  width: 100%;
+} */

@@ -60,7 +60,7 @@ const Banner = () => {
             </Col>
 
           <Col xs={12} md={6} xl={5}>
-            <img src="https://imgur.com/wiE1POO.gif" alt="creativity" />
+            <img className="creative-img" src="https://imgur.com/wiE1POO.gif" alt="creativity" />
           </Col>
 
         </Row>
