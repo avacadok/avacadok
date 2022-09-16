@@ -4,10 +4,18 @@ import depawture from "../docs/depawture.png";
 import keen from "../docs/keen.png";
 import jungle from "../docs/jungle.png";
 import scheduler from "../docs/scheduler.png";
+import portfolio from "../docs/portfolio.png";
+import betterTweet from "../docs/better-tweet.png";
 
 const Projects = () => {
 
   const projects = [
+    {
+      title: "Personal Portfolio",
+      description: "A simple, one page personal portfolio website",
+      imgUrl: portfolio,
+      link: 'https://github.com/avacadok/avacadok-portfolio',
+    },
     {
       title: "Depawture",
       description: "An ecommerce store that display pet travel related products",
@@ -28,16 +36,16 @@ const Projects = () => {
     },
     {
       title: "Scheduler",
-      description: "An app that allows booking, editing and cancelling an interview",
+      description: "An app that allows users to book, edit and cancell interviews",
       imgUrl: scheduler,
       link: 'https://github.com/avacadok/scheduler',
+    },
+    {
+      title: "Tweeter",
+      description: "A single page Twitter clone",
+      imgUrl: betterTweet,
+      link: 'https://github.com/avacadok/tweeter',
     }
-    // {
-    //   title: "Happy Eats",
-    //   description: "A food ordering app that users can order items online and pick-up in store",
-    //   imgUrl: "",
-    //   link: '',
-    // }
   ];
 
   return (
