@@ -3,13 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 import js from "../docs/JS.png";
-import css from "../docs/css.png"
-import html from "../docs/html.png"
-import node from "../docs/node.png"
-import ruby from "../docs/ruby.png"
-import postgreSQL from "../docs/postgreSQL.png"
-import react from "../docs/React.png"
-import git from "../docs/git.png"
+import css from "../docs/css.png";
+import html from "../docs/html.png";
+import node from "../docs/node.png";
+import ruby from "../docs/ruby.png";
+import postgreSQL from "../docs/postgreSQL.png";
+import react from "../docs/React.png";
+import git from "../docs/git.png";
 
 const Skills = () => {
   const responsive = {

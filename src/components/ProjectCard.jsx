@@ -7,7 +7,9 @@ const ProjectCard = (props) => {
     <>
       <div className='project-item'>
 
-        <a href={link} className='project-pic-wrap' data-category={title}>
+        <a href={link} className='project-pic-wrap' 
+        target={'_blank'}
+        data-category={title}>
           <img src={imgUrl} alt="project-pic" className="project-pic" />
         </a>
 

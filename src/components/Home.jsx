@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -47,25 +49,29 @@ const Banner = () => {
     }
   }
   return (
-    <section className="home">
-      <Container>
-        <Row className="align-item-center">
-            <Col xs={12} md={6} xl={7}>
-              <span className="tagline">
-                Welcome to my Portfolio 
-              </span>
-              <h1>Hi I am Ava ✨<br/> A <span className="wrap">{text}</span></h1>
-              <p>I am a web developer who transitioned from the financial banking field. I had a strong interest in web development and love the ability to be creative and design visually appealing applications. Passionated about using my code to create beautiful and user-friendly products, that provide joy in people’s daily lives. I am driven to learn new concepts and work well in highly collaborative work environment.</p>
-              {/* <button onClick={() => console.log('connected')}>Let's connect </button> */}
-            </Col>
+    <TrackVisibility>
+      {({ isVisible }) =>
+        <div className={isVisible ? "animate__animated animate__fadeIn animate__slow" : ""}>
+          <section className="home">
+            <Container>
+              <Row className="align-item-center">
+                <Col xs={12} md={6} xl={7}>
+                  <span className="tagline">
+                    Welcome to my Portfolio
+                  </span>
+                  <h1>Hi I am Ava ✨<br /> A <span className="wrap">{text}</span></h1>
+                  <p>I am a web developer who transitioned from the financial banking field. I had a strong interest in web development and love the ability to be creative and design visually appealing applications. Passionated about using my code to create beautiful and user-friendly products, that provide joy in people’s daily lives. I am driven to learn new concepts and work well in highly collaborative work environment.</p>
+                </Col>
 
-          <Col xs={12} md={6} xl={5}>
-            <img className="creative-img" src="https://imgur.com/wiE1POO.gif" alt="creativity" />
-          </Col>
+                <Col xs={12} md={6} xl={5}>
+                  <img className="creative-img" src="https://imgur.com/wiE1POO.gif" alt="creativity" />
+                </Col>
 
-        </Row>
-      </Container>
-    </section>
+              </Row>
+            </Container>
+          </section>
+        </div>}
+    </TrackVisibility>
   )
 }
 

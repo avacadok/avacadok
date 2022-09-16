@@ -28,9 +28,9 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://github.com/avacadok"><i className="fa-brands fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/ava-kuang-8bbb5b113/"><i className="fa-brands fa-linkedin"></i></a>
-              <a href="mailto:avakuang8@gmail.com"><i className="fa-solid fa-envelope"></i></a>
+              <a href="https://github.com/avacadok" target={'_blank'}><i className="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/ava-kuang-8bbb5b113/" target={'_blank'}><i className="fa-brands fa-linkedin"></i></a>
+              <a href="mailto:avakuang8@gmail.com" target={'_blank'}><i className="fa-solid fa-envelope"></i></a>
 
             </div>
             {/* <span className="contact" onClick={() => console.log("connect")}>Contact</span> */}

@@ -21,11 +21,11 @@ const Contact = () => {
     })
   }
 
-  const handleSumbit = async (e) => {
-    e.preventdefault();
-    setButtonText("Sending...")
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setButtonText("Sending...");
     let response = await fetch("http://localhost:5000/contact", {
-      method: 'POST',
+      method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
       },
@@ -34,14 +34,14 @@ const Contact = () => {
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInfo);
+    if (result.code === 200) {
+      setStatus({ success: true, message: 'Message sent successfully, thank you 💜' });
 
-    if(result.code === 200) {
-      setStatus({success: true, message: "Message sent successfully 💜"});
     } else {
-      setStatus({success: false, message: "Something went wrong, please try again later 😔"});
+      setStatus({ success: false, message: 'Sorry something went wrong, please try again later 😔' });
     }
-  }
-
+  };
+      console.log("status",status.message)
   return (
     <section className="contact-ava">
       <Container >
@@ -52,7 +52,14 @@ const Contact = () => {
 
           <Col size={12} md={6}>
             <h2>Let's Connect!</h2>
-            <form onSubmit={handleSumbit}>
+            {
+                status.message && <Col>
+                  <p className={status.success === true ? "success" : "danger"}>
+                    {status.message}
+                  </p>
+                </Col>
+              }
+            <form onSubmit={handleSubmit}>
               <Row className="contact-detail">
                 <Col md={6} className="px-1">
                   <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
@@ -74,15 +81,6 @@ const Contact = () => {
                   <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                   <button type="submit"><span>{buttonText}</span></button>
                 </Col>
-
-                {
-                  status.message && <Col>
-                  <p className={status.success === true ? "success" : "danger"}>
-                    {status.messgae}
-                  </p>
-                  </Col>
-                }
-
               </Row>
             </form>
           </Col>

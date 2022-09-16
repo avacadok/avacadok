@@ -1,9 +1,9 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import depawture from "../docs/depawture.png";
-import keen from "../docs/keen.png"
-import jungle from "../docs/jungle.png"
-import scheduler from "../docs/scheduler.png"
+import keen from "../docs/keen.png";
+import jungle from "../docs/jungle.png";
+import scheduler from "../docs/scheduler.png";
 
 const Projects = () => {
 

@@ -172,14 +172,14 @@ nav.navbar {
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   .creative-img {
     width: 400px;
     height: 400px;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .creative-img {
     width: 500px;
     height: 500px;
@@ -188,8 +188,8 @@ nav.navbar {
 
 @media screen and (min-width: 1000px) {
   .creative-img {
-    width: 650px;
-    height: 650px;
+    width: 550px;
+    height: 550px;
   }
 }
 
@@ -359,11 +359,15 @@ nav.navbar {
 /* Contact */
 
 .contact-ava {
-  padding: 60px 0 200px 0;
+  padding: 150px 0 200px 0;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 
 .contact-ava img {
@@ -392,8 +396,6 @@ nav.navbar {
 .contact-ava form textarea {
   resize: none;
 }
-
-
 
 .contact-ava form input:focus,
 .contact-ava form textarea:focus {
@@ -426,24 +428,20 @@ nav.navbar {
   padding-right: 5px;
 }
 
-/* .contact-ava form button span {
-  z-index: 1;
-  position: relative;
+p.success {
+	color: rgb(94, 42, 139);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
 }
 
-.contact-ava form button::before {
-  content: "";
-  background: #7b2fa4;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transition: 0.4s ease-in-out;
-  border-radius: 10px;
-  color: #fff;
+p.danger {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
 }
-.contact-ava form button:hover::before {
-  width: 100%;
-} */
