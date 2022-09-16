@@ -41,7 +41,7 @@ const Skills = () => {
                 Skills
               </h2>
               <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ea ipsam eos laudantium dolores aspernatur a perspiciatis nihil, iure provident, vitae, eveniet sed iusto dolor animi voluptate pariatur impedit saepe soluta itaque. Maiores mollitia doloribus earum, maxime assumenda explicabo facilis placeat necessitatibus ea! Ratione nihil vero eligendi, odit labore, distinctio voluptatem autem, repudiandae commodi doloribus cupiditate? Facilis laboriosam unde ducimus eaque? Rerum animi minima eveniet ipsam accusantium error, mollitia aperiam, necessitatibus excepturi tempore, omnis repellendus doloribus ducimus eius soluta corporis corrupti. Minima voluptatum quis harum voluptate ipsam dolores fuga odit aut, id cumque doloribus ex aliquid iusto eligendi blanditiis nam!
+               I have learned and growned a lot from Lighthouse Labs for the past couple months and I will always keep learning by taking advantage of online resources and being engaged in the web development community 👩‍💻
               </p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider">
               <div className="item">

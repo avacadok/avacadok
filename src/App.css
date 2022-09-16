@@ -163,10 +163,10 @@ nav.navbar {
   background-color: transparent;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 400px) {
   .creative-img {
-    width: 400px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     margin-left: 10px;
 
   }
@@ -293,7 +293,7 @@ nav.navbar {
   padding-left: 40px;
 }
 
-.project-item {
+.projects .project-item {
   display: flex;
   flex-flow: column;
   width: 100%;
@@ -303,6 +303,8 @@ nav.navbar {
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-pic-wrap {

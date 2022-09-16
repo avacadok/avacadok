@@ -59,7 +59,7 @@ const Contact = () => {
                   </p>
                 </Col>
               }
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} data-netlify="true">
               <Row className="contact-detail">
                 <Col md={6} className="px-1">
                   <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />

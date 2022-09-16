@@ -51,7 +51,7 @@ const Projects = () => {
   return (
     <section className="projects" id="projects">
       <h2>My Projects</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tenetur quis illum fugiat excepturi non ullam enim eaque libero nobis, quos optio distinctio autem laboriosam?</p>
+      <p>Built with love</p>
       <div className="projects-container">
         <div className="projects-wrapper">
           {projects.map((project, index) => {
