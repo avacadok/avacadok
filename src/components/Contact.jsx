@@ -24,7 +24,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("/contact", {
+    let response = await fetch("https://scintillating-squirrel-4eca2b.netlify.app/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
