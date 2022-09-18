@@ -27,7 +27,8 @@ const Contact = () => {
     let response = await fetch("https://scintillating-squirrel-4eca2b.netlify.app/contact", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json;charset=utf-8",
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
       },
       body: JSON.stringify(formDetails),
     });
