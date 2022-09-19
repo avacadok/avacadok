@@ -9,7 +9,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setButtonText("Sending");
+    setButtonText("Sending...");
     emailjs.sendForm('service_ixx2u2r', 'template_cr5uj88', form.current, 'fzVeZRD9lNra-lyWB')
       .then((result) => {
           console.log("result",result.text);
@@ -21,7 +21,7 @@ const Contact = () => {
       });
     e.target.reset();
   };
-  
+
   return (
     <section className="contact-ava" id="contact">
       <Container >
