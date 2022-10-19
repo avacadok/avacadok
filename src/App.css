@@ -163,53 +163,6 @@ nav.navbar {
   background-color: transparent;
 }
 
-@media screen and (min-width: 400px) {
-  .creative-img {
-    width: 250px;
-    height: 250px;
-    margin-left: 10px;
-
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .creative-img {
-    width: 400px;
-    height: 400px;
-  }
-}
-
-@media screen and (min-width: 850px) {
-  .creative-img {
-    width: 500px;
-    height: 500px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .creative-img {
-    width: 550px;
-    height: 550px;
-  }
-}
-
-/* .home img {
-  animation: updown 3s linear infinite;
-}
-
-@keyframes updown {
-  0% {
-    transform: translateY(-10px);
-  }
-
-  50% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(-10px);
-  }
-} */
 
 /* Skills */
 .skill {
@@ -290,7 +243,6 @@ nav.navbar {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  padding-left: 40px;
 }
 
 .projects .project-item {
