@@ -5,11 +5,17 @@ import keen from "../docs/keen.png";
 import jungle from "../docs/jungle.png";
 import scheduler from "../docs/scheduler.png";
 import portfolio from "../docs/portfolio.png";
-import betterTweet from "../docs/better-tweet.png";
+import netflix from "../docs/netflix.png";
 
 const Projects = () => {
 
   const projects = [
+    {
+      title: "Netflix Clone",
+      description: "Netflix clone built with React, Redux and Firebase",
+      imgUrl: netflix,
+      link: 'https://github.com/avacadok/netflix-clone',
+    },
     {
       title: "Personal Portfolio",
       description: "A simple, one page personal portfolio website",
@@ -39,12 +45,6 @@ const Projects = () => {
       description: "An app that allows users to book, edit and cancell interviews",
       imgUrl: scheduler,
       link: 'https://github.com/avacadok/scheduler',
-    },
-    {
-      title: "Tweeter",
-      description: "A single page Twitter clone",
-      imgUrl: betterTweet,
-      link: 'https://github.com/avacadok/tweeter',
     }
   ];
 
