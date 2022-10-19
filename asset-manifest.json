@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/avacadok-portfolio/static/css/main.805ed163.css",
+    "main.css": "/avacadok-portfolio/static/css/main.819fbd06.css",
     "main.js": "/avacadok-portfolio/static/js/main.8085443c.js",
     "static/js/787.acf7ff73.chunk.js": "/avacadok-portfolio/static/js/787.acf7ff73.chunk.js",
     "static/media/depawture.png": "/avacadok-portfolio/static/media/depawture.1ec952c7db4454b82ef8.png",
@@ -21,12 +21,12 @@
     "static/media/revicons.ttf": "/avacadok-portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/avacadok-portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/avacadok-portfolio/index.html",
-    "main.805ed163.css.map": "/avacadok-portfolio/static/css/main.805ed163.css.map",
+    "main.819fbd06.css.map": "/avacadok-portfolio/static/css/main.819fbd06.css.map",
     "main.8085443c.js.map": "/avacadok-portfolio/static/js/main.8085443c.js.map",
     "787.acf7ff73.chunk.js.map": "/avacadok-portfolio/static/js/787.acf7ff73.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.805ed163.css",
+    "static/css/main.819fbd06.css",
     "static/js/main.8085443c.js"
   ]
 }
